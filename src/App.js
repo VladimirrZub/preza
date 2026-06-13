@@ -574,13 +574,13 @@ const App = () => {
 			<ScreenshotGrid>
 				<ScreenshotColumn>
 					<ScreenshotFrame className='pc'>
-						<img src='/gl.png' alt='ПК версия' />
+						<img src='/gl.PNG' alt='ПК версия' />
 					</ScreenshotFrame>
 					<ScreenshotLabel>ПК версия</ScreenshotLabel>
 				</ScreenshotColumn>
 				<ScreenshotColumn>
 					<ScreenshotFrame className='mobile'>
-						<img src='/mbgl.png' alt='Мобильная версия' />
+						<img src='/mbgl.PNG' alt='Мобильная версия' />
 					</ScreenshotFrame>
 					<ScreenshotLabel>Мобильная версия</ScreenshotLabel>
 				</ScreenshotColumn>
@@ -602,13 +602,13 @@ const App = () => {
 			<ScreenshotGrid>
 				<ScreenshotColumn>
 					<ScreenshotFrame className='pc'>
-						<img src='/us.png' alt='ПК версия' />
+						<img src='/us.PNG' alt='ПК версия' />
 					</ScreenshotFrame>
 					<ScreenshotLabel>ПК версия</ScreenshotLabel>
 				</ScreenshotColumn>
 				<ScreenshotColumn>
 					<ScreenshotFrame className='mobile'>
-						<img src='/usmb.png' alt='Мобильная версия' />
+						<img src='/usmb.PNG' alt='Мобильная версия' />
 					</ScreenshotFrame>
 					<ScreenshotLabel>Мобильная версия</ScreenshotLabel>
 				</ScreenshotColumn>
@@ -630,13 +630,13 @@ const App = () => {
 			<ScreenshotGrid>
 				<ScreenshotColumn>
 					<ScreenshotFrame className='pc'>
-						<img src='/lk.png' alt='ПК версия' />
+						<img src='/lk.PNG' alt='ПК версия' />
 					</ScreenshotFrame>
 					<ScreenshotLabel>ПК версия</ScreenshotLabel>
 				</ScreenshotColumn>
 				<ScreenshotColumn>
 					<ScreenshotFrame className='mobile'>
-						<img src='/lkmb.png' alt='Мобильная версия' />
+						<img src='/lkmb.PNG' alt='Мобильная версия' />
 					</ScreenshotFrame>
 					<ScreenshotLabel>Мобильная версия</ScreenshotLabel>
 				</ScreenshotColumn>
@@ -658,13 +658,13 @@ const App = () => {
 			<ScreenshotGrid>
 				<ScreenshotColumn>
 					<ScreenshotFrame className='pc'>
-						<img src='/ad.png' alt='ПК версия' />
+						<img src='/ad.PNG' alt='ПК версия' />
 					</ScreenshotFrame>
 					<ScreenshotLabel>ПК версия</ScreenshotLabel>
 				</ScreenshotColumn>
 				<ScreenshotColumn>
 					<ScreenshotFrame className='mobile'>
-						<img src='/admb.png' alt='Мобильная версия' />
+						<img src='/admb.PNG' alt='Мобильная версия' />
 					</ScreenshotFrame>
 					<ScreenshotLabel>Мобильная версия</ScreenshotLabel>
 				</ScreenshotColumn>
