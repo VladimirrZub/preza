@@ -448,10 +448,10 @@ const App = () => {
 			</Subtitle>
 			<div style={{ marginTop: '3rem' }}>
 				<InfoLine>
-					Выполнил: <strong>ТВОЁ ФИО</strong>
+					Выполнил: <strong>Зубов Владимир Владимирович ИСП-05</strong>
 				</InfoLine>
 				<InfoLine>
-					Руководитель: <strong>ФИО ПРЕПОДАВАТЕЛЯ</strong>
+					Руководитель: <strong>Сметанин Андрей Евгеньевич</strong>
 				</InfoLine>
 				<InfoLine
 					style={{
@@ -462,9 +462,9 @@ const App = () => {
 						letterSpacing: '0.1em',
 					}}
 				>
-					ТВОЁ УЧЕБНОЕ ЗАВЕДЕНИЕ
+					Новгородский Строительный Колледж
 				</InfoLine>
-				<InfoLine style={{ marginTop: '1rem' }}>2025</InfoLine>
+				<InfoLine style={{ marginTop: '1rem' }}>2026</InfoLine>
 			</div>
 		</GlassCard>,
 
@@ -489,7 +489,7 @@ const App = () => {
 				Почему это <span>важно?</span>
 			</Title>
 			<Subtitle style={{ marginTop: '1.5rem', textAlign: 'left' }}>
-				Современный рынок клининговых услуг активно растёт. В 2024 году объём
+				Современный рынок клининговых услуг активно растёт. В 2026 году объём
 				рынка клининга в России превысил 250 млрд рублей. При этом большинство
 				компаний до сих пор используют устаревшие методы приёма заказов.
 			</Subtitle>
