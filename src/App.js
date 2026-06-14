@@ -19,8 +19,8 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     font-family: 'Inter', sans-serif;
-    background: #05070A;
-    color: #E8E3D9;
+    background: #0a0f14;
+    color: #F0ECE0;
     overflow: hidden;
     -webkit-font-smoothing: antialiased;
   }
@@ -47,7 +47,7 @@ const Container = styled.div`
 	justify-content: center;
 	position: relative;
 	overflow: hidden;
-	background: #05070a;
+	background: #0a0f14;
 `
 
 const BackgroundOrbs = styled.div`
@@ -64,7 +64,7 @@ const Orb = styled.div`
 	position: absolute;
 	border-radius: 50%;
 	filter: blur(100px);
-	opacity: 0.12;
+	opacity: 0.18;
 	animation: ${float} ${props => props.duration || 25}s ease-in-out infinite;
 	animation-delay: ${props => props.delay || 0}s;
 	width: ${props => props.size || 400}px;
@@ -87,8 +87,8 @@ const GridLines = styled.div`
 	pointer-events: none;
 	z-index: 0;
 	background-image:
-		linear-gradient(rgba(212, 175, 55, 0.03) 1px, transparent 1px),
-		linear-gradient(90deg, rgba(212, 175, 55, 0.03) 1px, transparent 1px);
+		linear-gradient(rgba(212, 175, 55, 0.06) 1px, transparent 1px),
+		linear-gradient(90deg, rgba(212, 175, 55, 0.06) 1px, transparent 1px);
 	background-size: 80px 80px;
 `
 
@@ -104,12 +104,12 @@ const SlideContainer = styled.div`
 `
 
 const GlassCard = styled.div`
-	background: rgba(20, 25, 31, 0.5);
+	background: rgba(25, 30, 40, 0.6);
 	backdrop-filter: blur(20px);
 	-webkit-backdrop-filter: blur(20px);
-	border: 1px solid rgba(212, 175, 55, 0.15);
+	border: 1px solid rgba(212, 175, 55, 0.25);
 	padding: ${props => props.padding || '3rem'};
-	box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 20px 60px rgba(212, 175, 55, 0.08);
 	max-width: ${props => props.maxWidth || '900px'};
 	width: 100%;
 	position: relative;
@@ -124,7 +124,7 @@ const GlassCard = styled.div`
 		background: linear-gradient(
 			90deg,
 			transparent,
-			rgba(212, 175, 55, 0.4),
+			rgba(212, 175, 55, 0.5),
 			transparent
 		);
 	}
@@ -136,10 +136,10 @@ const Title = styled.h1`
 	font-weight: 700;
 	margin-bottom: ${props => props.mb || '1.5rem'};
 	line-height: 1.2;
-	color: #e8e3d9;
+	color: #f5f0e8;
 
 	span {
-		background: linear-gradient(135deg, #d4af37, #f0d060);
+		background: linear-gradient(135deg, #e5c158, #f5d878);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-clip: text;
@@ -148,7 +148,7 @@ const Title = styled.h1`
 
 const Subtitle = styled.p`
 	font-size: 1.1rem;
-	color: #8b8478;
+	color: #b0a890;
 	line-height: 1.8;
 	margin-bottom: ${props => props.mb || '1rem'};
 	font-weight: 300;
@@ -156,12 +156,12 @@ const Subtitle = styled.p`
 
 const InfoLine = styled.div`
 	font-size: 1rem;
-	color: #8b8478;
+	color: #b0a890;
 	margin-bottom: 0.5rem;
 	font-weight: 300;
 
 	strong {
-		color: #e8e3d9;
+		color: #f5f0e8;
 		font-weight: 500;
 	}
 `
@@ -170,8 +170,8 @@ const QRFrame = styled.div`
 	display: inline-block;
 	padding: 1.5rem;
 	background: white;
-	border: 1px solid rgba(212, 175, 55, 0.3);
-	box-shadow: 0 20px 60px rgba(212, 175, 55, 0.15);
+	border: 1px solid rgba(212, 175, 55, 0.4);
+	box-shadow: 0 20px 60px rgba(212, 175, 55, 0.2);
 
 	img {
 		width: 280px;
@@ -192,26 +192,25 @@ const TechGrid = styled.div`
 `
 
 const TechItem = styled(motion.div)`
-	background: rgba(20, 25, 31, 0.6);
-	border: 1px solid rgba(212, 175, 55, 0.1);
+	background: rgba(30, 35, 45, 0.7);
+	border: 1px solid rgba(212, 175, 55, 0.2);
 	padding: 1.8rem 1.5rem;
 	text-align: center;
 	transition: all 0.4s;
 
 	&:hover {
-		border-color: rgba(212, 175, 55, 0.35);
-		background: rgba(28, 33, 40, 0.8);
+		border-color: rgba(212, 175, 55, 0.5);
+		background: rgba(40, 45, 55, 0.8);
 		transform: translateY(-4px);
-		box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+		box-shadow: 0 15px 40px rgba(212, 175, 55, 0.1);
 	}
 `
 
 const TechIcon = styled.div`
-	color: #d4af37;
+	color: #e5c158;
 	margin-bottom: 1rem;
 	display: flex;
 	justify-content: center;
-
 	svg {
 		width: 32px;
 		height: 32px;
@@ -222,14 +221,14 @@ const TechName = styled.div`
 	font-family: 'Cormorant Garamond', serif;
 	font-size: 1.2rem;
 	font-weight: 600;
-	color: #e8e3d9;
+	color: #f5f0e8;
 	margin-bottom: 0.3rem;
 	letter-spacing: 0.03em;
 `
 
 const TechDesc = styled.div`
 	font-size: 0.8rem;
-	color: #5c5850;
+	color: #8b8470;
 	letter-spacing: 0.05em;
 `
 
@@ -239,7 +238,6 @@ const ScreenshotGrid = styled.div`
 	gap: 2rem;
 	align-items: start;
 	width: 100%;
-
 	@media (max-width: 768px) {
 		grid-template-columns: 1fr;
 	}
@@ -254,8 +252,8 @@ const ScreenshotColumn = styled.div`
 `
 
 const ScreenshotFrame = styled.div`
-	background: rgba(20, 25, 31, 0.3);
-	border: 1px solid rgba(212, 175, 55, 0.15);
+	background: rgba(30, 35, 45, 0.4);
+	border: 1px solid rgba(212, 175, 55, 0.25);
 	width: 100%;
 	display: flex;
 	align-items: flex-end;
@@ -264,9 +262,9 @@ const ScreenshotFrame = styled.div`
 	transition: all 0.4s;
 
 	&:hover {
-		border-color: rgba(212, 175, 55, 0.4);
-		background: rgba(20, 25, 31, 0.5);
-		box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+		border-color: rgba(212, 175, 55, 0.5);
+		background: rgba(40, 45, 55, 0.6);
+		box-shadow: 0 15px 40px rgba(212, 175, 55, 0.1);
 	}
 
 	img {
@@ -280,13 +278,11 @@ const ScreenshotFrame = styled.div`
 	&.pc {
 		aspect-ratio: 16 / 10;
 	}
-
 	&.mobile {
 		max-width: 300px;
 		margin: 0 auto;
 		border-radius: 20px;
 		aspect-ratio: 9 / 19;
-
 		img {
 			object-fit: cover;
 			object-position: top;
@@ -295,15 +291,15 @@ const ScreenshotFrame = styled.div`
 `
 
 const ScreenshotLabel = styled.div`
-	background: rgba(5, 7, 10, 0.85);
+	background: rgba(10, 15, 20, 0.9);
 	backdrop-filter: blur(15px);
 	padding: 0.5rem 1.5rem;
 	font-size: 0.8rem;
-	color: #d4af37;
+	color: #e5c158;
 	font-family: 'Cormorant Garamond', serif;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
-	border: 1px solid rgba(212, 175, 55, 0.2);
+	border: 1px solid rgba(212, 175, 55, 0.3);
 	text-align: center;
 `
 
@@ -323,12 +319,12 @@ const Dot = styled.button`
 	height: 10px;
 	border-radius: 50%;
 	border: 1px solid
-		${props => (props.active ? '#D4AF37' : 'rgba(212, 175, 55, 0.3)')};
-	background: ${props => (props.active ? '#D4AF37' : 'transparent')};
+		${props => (props.active ? '#E5C158' : 'rgba(212, 175, 55, 0.4)')};
+	background: ${props => (props.active ? '#E5C158' : 'transparent')};
 	cursor: pointer;
 	transition: all 0.3s;
 	&:hover {
-		border-color: #d4af37;
+		border-color: #e5c158;
 		transform: scale(1.4);
 	}
 `
@@ -339,7 +335,7 @@ const PageNumber = styled.div`
 	left: 50%;
 	transform: translateX(-50%);
 	font-size: 0.85rem;
-	color: #d4af37;
+	color: #e5c158;
 	z-index: 10;
 	font-family: 'Cormorant Garamond', serif;
 	letter-spacing: 0.15em;
@@ -347,12 +343,12 @@ const PageNumber = styled.div`
 
 const Badge = styled.span`
 	display: inline-block;
-	color: #d4af37;
+	color: #e5c158;
 	font-size: 0.75rem;
 	letter-spacing: 0.25em;
 	text-transform: uppercase;
 	font-family: 'Cormorant Garamond', serif;
-	border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+	border-bottom: 1px solid rgba(212, 175, 55, 0.4);
 	padding-bottom: 0.3rem;
 	margin-bottom: 0.5rem;
 `
@@ -364,7 +360,7 @@ const List = styled.ul`
 `
 
 const ListItem = styled.li`
-	color: #8b8478;
+	color: #b0a890;
 	padding: 0.7rem 0;
 	padding-left: 2rem;
 	position: relative;
@@ -377,7 +373,7 @@ const ListItem = styled.li`
 		top: 1rem;
 		width: 6px;
 		height: 1px;
-		background: #d4af37;
+		background: #e5c158;
 	}
 `
 
@@ -442,7 +438,7 @@ const App = () => {
 				<span>ClearBreath</span>
 			</Title>
 			<Subtitle
-				style={{ fontSize: '1rem', marginTop: '1rem', color: '#5C5850' }}
+				style={{ fontSize: '1rem', marginTop: '1rem', color: '#8B8470' }}
 			>
 				Клининговая платформа нового поколения
 			</Subtitle>
@@ -457,7 +453,7 @@ const App = () => {
 					style={{
 						marginTop: '2rem',
 						fontSize: '1.1rem',
-						color: '#D4AF37',
+						color: '#E5C158',
 						fontFamily: '"Cormorant Garamond", serif',
 						letterSpacing: '0.1em',
 					}}
@@ -466,21 +462,6 @@ const App = () => {
 				</InfoLine>
 				<InfoLine style={{ marginTop: '1rem' }}>2026</InfoLine>
 			</div>
-		</GlassCard>,
-
-		<GlassCard maxWidth='600px'>
-			<Badge>QR-код</Badge>
-			<Title size='2rem' mb='2rem' style={{ marginTop: '0.5rem' }}>
-				Ссылка на сайт
-			</Title>
-			<QRFrame>
-				<img src='/qr.png' alt='QR код' />
-			</QRFrame>
-			<Subtitle
-				style={{ marginTop: '1.5rem', fontSize: '0.85rem', color: '#5C5850' }}
-			>
-				Отсканируйте чтобы открыть веб-приложение
-			</Subtitle>
 		</GlassCard>,
 
 		<GlassCard maxWidth='850px'>
@@ -557,6 +538,21 @@ const App = () => {
 					</TechItem>
 				))}
 			</TechGrid>
+		</GlassCard>,
+
+		<GlassCard maxWidth='600px'>
+			<Badge>QR-код</Badge>
+			<Title size='2rem' mb='2rem' style={{ marginTop: '0.5rem' }}>
+				Ссылка на сайт
+			</Title>
+			<QRFrame>
+				<img src='/qrra.png' alt='QR код' />
+			</QRFrame>
+			<Subtitle
+				style={{ marginTop: '1.5rem', fontSize: '0.85rem', color: '#8B8470' }}
+			>
+				Отсканируйте чтобы открыть веб-приложение
+			</Subtitle>
 		</GlassCard>,
 
 		<div style={{ width: '100%', maxWidth: '1300px' }}>
@@ -713,7 +709,7 @@ const App = () => {
 				style={{
 					marginTop: '1.5rem',
 					textAlign: 'center',
-					color: '#D4AF37',
+					color: '#E5C158',
 					fontFamily: '"Cormorant Garamond", serif',
 					fontSize: '1.1rem',
 				}}
@@ -738,7 +734,7 @@ const App = () => {
 					/>
 					<Orb
 						size={350}
-						color='#D4AF37'
+						color='#E5C158'
 						top='55%'
 						left='85%'
 						duration={25}
@@ -746,7 +742,7 @@ const App = () => {
 					/>
 					<Orb
 						size={300}
-						color='#B8960C'
+						color='#C8A43A'
 						top='75%'
 						left='30%'
 						duration={28}
