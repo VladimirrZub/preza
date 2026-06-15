@@ -386,7 +386,7 @@ const techStack = [
 	{ name: 'Framer Motion', desc: 'Анимации', icon: Film },
 	{ name: 'React Router v6', desc: 'Маршрутизация', icon: Route },
 	{ name: 'Nominatim API', desc: 'Геокодинг', icon: Map },
-	{ name: 'Vercel', desc: 'Деплой', icon: Cloud },
+	{ name: 'Amvera', desc: 'Деплой', icon: Cloud },
 ]
 
 const TOTAL_SLIDES = 10
